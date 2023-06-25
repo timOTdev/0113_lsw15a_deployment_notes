@@ -23,9 +23,10 @@ module.exports = {
     useNullAsDefault: true,
   },
 
+  // add this configuration to your project
   production: {
-    client: 'pg',
-    connection: dbConnection,
+    client: 'pg', // yarn add pg
+    connection: dbConnection, // could be an object or a string
     pool: {
       min: 2,
       max: 10,
